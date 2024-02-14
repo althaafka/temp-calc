@@ -11,24 +11,23 @@
     <h1>Temperature Conversion Calculator</h1>
     <section>
         <form id="form">
-            <div>
-                <p id="convertFrom">Celcius to Fahrenheit</p>
-                <label for="input">Degrees Celsius (°C)</label>
-                <input type="number" id="input" name="input">
+            <div class="input">
+                <label for="input" id="convertTo">Celcius to Fahrenheit</label>
+                <input type="number" id="input" name="input" value="0">
+                <p id="unit">°C</p>
             </div>
             <div class="button-group">
                 <button type="submit">Convert</button>
-                <button type="button">Reset</button>
-                <button type="button" onclick="">Reverse</button>
+                <button type="button" onclick="reset()">Reset</button>
+                <button type="button" onclick="reverse()">Reverse</button>
             </div>
         </form>
 
-        <div class="output">
-            <p>Fahrenheit (°F)</p>
+        <div class="output hidden">
+            <p id="answer-unit">Fahrenheit (°F)</p>
             <p id="answer">0</p>
             <p>Solution</p>
             <div id="solution">
-                <p>90°C * (9/5) + 32 = 194°F</p>
             </div>
         </div>
 

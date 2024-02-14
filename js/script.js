@@ -1,6 +1,7 @@
 let form = document.getElementById("form");
 let input = document.getElementById("input");
 let solution = document.getElementById("solution");
+let convertFrom = document.getElementById("unit").innerHTML[1];
 
 cToF = function(celcius) {
     solution.innerHTML = `
@@ -25,14 +26,34 @@ fToC = function(fahrenheit) {
 
 showAnswer = function() {
   document.querySelector(".output").style.visibility = "visible";
-  let answer = convertFrom.innerHTML[0] == 'C'? cToF(input.value) : fToC(input.value);
+  let answer = convertFrom == 'C'? cToF(input.value) : fToC(input.value);
   document.getElementById("answer").innerHTML = answer;
 }
 
 
 form.addEventListener("submit", function(e) {
     e.preventDefault();
-    console.log(convertFrom.innerHTML[0]);
+    console.log(convertFrom);
     showAnswer();
-
 });
+
+function reverse(){
+    if (convertFrom == 'C'){
+        convertFrom = 'F';
+        document.getElementById("convertTo").innerHTML = "Fahrenheit to Celsius";
+        document.getElementById("unit").innerHTML = "°F";
+        document.getElementById("answer-unit").innerHTML = "Celcius (°C)";
+    } else {
+        convertFrom = 'C';
+        document.getElementById("convertTo").innerHTML = "Celsius to Fahrenheit";
+        document.getElementById("unit").innerHTML = "°C";
+        document.getElementById("answer-unit").innerHTML = "Fahrenheit (°F)";
+    }
+}
+
+function reset(){
+    console.log("reset");
+    document.getElementById("input").value = "";
+    document.querySelector(".output").style.visibility = "hidden";
+}
+
