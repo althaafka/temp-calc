@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Temperature Conversion</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 <body>
-    
+    <h1>Temperature Conversion Calculator</h1>
+    <section>
+        <form>
+            <div>
+                <p>Celcius to Fahrenheit</p>
+                <label for="celcius">Degrees Celsius (°C)</label>
+                <input type="number" id="celcius" name="celcius">
+            </div>
+            <div class="button-group">
+                <input type="button" value="Convert" onclick="">
+                <input type="button" value="Reset">
+                <input type="button" value="Reverse">
+            </div>
+        </form>
+
+        <div class="output">
+            <p>Fahrenheit (°F)</p>
+            <p id="ans">0</p>
+            <p>Solution</p>
+            <p>90°C * (9/5) + 32 = 194°F</p>
+        </div>
+
+    </section>
+
 </body>
 </html>
