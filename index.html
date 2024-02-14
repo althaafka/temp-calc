@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Conversion</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <h1>Temperature Conversion Calculator</h1>
     <section>
-        <form>
+        <form id="form">
             <div>
-                <p>Celcius to Fahrenheit</p>
-                <label for="celcius">Degrees Celsius (°C)</label>
-                <input type="number" id="celcius" name="celcius">
+                <p id="convertFrom">Celcius to Fahrenheit</p>
+                <label for="input">Degrees Celsius (°C)</label>
+                <input type="number" id="input" name="input">
             </div>
             <div class="button-group">
-                <input type="button" value="Convert" onclick="">
-                <input type="button" value="Reset">
-                <input type="button" value="Reverse">
+                <button type="submit">Convert</button>
+                <button type="button">Reset</button>
+                <button type="button" onclick="">Reverse</button>
             </div>
         </form>
 
         <div class="output">
             <p>Fahrenheit (°F)</p>
-            <p id="ans">0</p>
+            <p id="answer">0</p>
             <p>Solution</p>
-            <p>90°C * (9/5) + 32 = 194°F</p>
+            <div id="solution">
+                <p>90°C * (9/5) + 32 = 194°F</p>
+            </div>
         </div>
 
     </section>
