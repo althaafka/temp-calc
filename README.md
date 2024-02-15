@@ -1,6 +1,6 @@
 # Celsius-Fahrenheit Converter Website
 
-This is a simple web application that allows users to convert temperatures from Celsius to Fahrenheit and vice versa, works well on both desktop and mobile devices. To use the converter, simply visit the website [here](link_to_website)
+This is a simple web application that allows users to convert temperatures from Celsius to Fahrenheit and vice versa, works well on both desktop and mobile devices. To use the converter, simply visit the website [here](https://revou-fundamental-course.github.io/5-feb-24-althaafka/)
 
 ## Screenshot
 ![image](https://github.com/revou-fundamental-course/5-feb-24-althaafka/assets/92701179/f5c58032-8511-4622-b557-037ec7a5e5a4)
