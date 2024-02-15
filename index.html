@@ -13,19 +13,19 @@
         <form id="form">
             <div class="input">
                 <label for="input" id="convertTo">Celcius to Fahrenheit</label>
-                <input type="number" id="input" name="input" value="0">
+                <input type="number" id="input" name="input" required>
                 <p id="unit">°C</p>
             </div>
             <div class="button-group">
                 <button type="submit">Convert</button>
-                <button type="button" onclick="reset()">Reset</button>
+                <button type="button" onclick="resetAll()">Reset</button>
                 <button type="button" onclick="reverse()">Reverse</button>
             </div>
         </form>
 
-        <div class="output hidden">
-            <p id="answer-unit">Fahrenheit (°F)</p>
-            <p id="answer">0</p>
+        <div class="output">
+            <p>Answer</p>
+            <p id="answer"></p>
             <p>Solution</p>
             <div id="solution">
             </div>
