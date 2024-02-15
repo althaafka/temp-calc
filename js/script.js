@@ -38,6 +38,7 @@ function reverse(){
         document.getElementById("convertTo").innerHTML = "Celsius to Fahrenheit";
         document.getElementById("unit").innerHTML = "°C";
     }
+    resetAll();
 }
 
 resetAll = function() {

@@ -1,18 +1,97 @@
+* {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+body {
+    padding: 0 20px;
+    background-color: rgb(235, 235, 235);
+}
+
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 20px;
 }
 
 form {
-    background-color: bisque;
-    width: 50%;
+    border: 10px solid #213a5f;
+    border-radius: 5px;
+    background-color: rgb(242, 242, 242);
+    width: 320px;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    padding: 20px;
 }
 
 .output {
     visibility: hidden;
+    font-size: large;
+}
+
+
+.input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input label {
+    font-size: 1.5rem;
+}
+
+.button-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 7px 14px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+.input div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#unit {
+    /* background-color: #f0f0f0; */
+    width: 20%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    section {
+        align-items: center;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    button {
+        padding: 2px 5px;
+    }
+
+    .input label {
+        font-size: 1.2rem;
+    }
 }
